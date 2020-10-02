@@ -1,0 +1,561 @@
+@font-face {
+    font-family: 'Lato';
+    src: url('fonts/Lato-Regular.ttf');
+}
+
+@mixin text {
+    font-family: Lato;
+    font-size: 1vw;
+    line-height: 1.5vw;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;    
+}
+
+@media (min-width: 601px) {
+
+    body {
+        margin: 0;
+
+        .mobile-menu {
+            display: none;
+        }
+    
+        header {
+            align-items: center;
+            background: linear-gradient(90deg, rgba(213, 32, 71, 0.8) 0%, rgba(238, 61, 27, 0.8) 100%), url('header-bg.png') center/cover no-repeat;
+            padding-bottom: 13vw;
+    
+            .header-top {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 3.5vw 11.5vw;
+    
+                .header-icon-wrap {
+                    display: flex;
+                    align-items: center;
+    
+                    span {
+                        @include text;
+                        font-weight: bold;
+                        font-size: 1.25vw;
+                        margin-left: 0.8vw;
+                    }
+                }
+    
+                .nav-wrap {
+                    
+                    a {
+                        @include text;
+                    }
+    
+                    a:not(#first-nav-item) {
+                        margin-left: 1vw;
+                    }
+                }
+    
+                .lang-wrap {
+                    display: flex;
+                    align-items: center;
+    
+                    select {
+                        @include text;
+                        border: none;
+                        background: transparent;
+                        margin-left: 0.5vw;
+                    }
+    
+                    .login-button-desktop {
+                        @include text;
+                        margin-left: 2vw;
+                        
+                        > div {
+                            border: 1px solid #ffffff;
+                            border-radius: 0.5vw;
+                            padding: 0.8vw 2vw;
+                        }
+                    }
+    
+                    .login-button-desktop:hover {
+                        color: #ED4C5C;
+            
+                        > div {
+                            background: #ffffff;
+                        }    
+                    }
+                }
+            }
+    
+            h1 {
+                @include text;
+                font-weight: bold;
+                font-size: 5vw;
+                line-height: 6vw;
+                text-align: center;
+                margin-top: 11vw;
+            }
+    
+            p {
+                @include text;
+                font-size: 1.6vw;
+                line-height: 2.5vw;
+                text-align: center;
+                text-transform: initial;
+            }
+            
+            .flex-wrapper {
+                display: flex;
+                justify-content: center;
+                margin-top: 2.7vw;
+    
+                .login-button-mobile {
+                    display: none;
+                }
+    
+                .signup-button {
+                    @include text;
+                    text-align: center;
+                    color: #ED4C5C;
+        
+                    > div {
+                        display: inline-block;
+                        background: #ffffff;
+                        border-radius: 0.5vw;
+                        border: 1px solid transparent;
+                        padding: 1vw 3vw;
+                    }
+                }
+                
+                .signup-button:hover {
+                    color: #ffffff;
+                    
+                    > div {
+                        border: 1px solid #ffffff;
+                        background: transparent;
+                    }
+                }
+            }
+        }
+    
+        main {
+            display: flex;
+            padding: 6.5vw 16vw;
+    
+            .main-text-wrapper {
+    
+                > h1 {
+                    font-family: Lato;
+                    font-weight: bold;
+                    font-size: 2.5vw;
+                    line-height: 3vw;
+                    margin-top: 3.2vw
+                }
+    
+                > p {
+                    font-family: Lato;
+                    font-size: 1vw;
+                    line-height: 1.5vw;
+                    text-align: justify;
+                    margin-top: 1.6vw;
+                }
+    
+                > a {
+                    font-family: Lato;
+                    font-size: 1vw;
+                    line-height: 1.5vw;
+                    text-align: justify;
+                    text-decoration: none;
+                    color: #ED4C5C;
+                    display: inline-block;
+                    margin-top: 2vw;
+                }
+            }
+    
+            .main-img-wrapper {
+                display: flex;
+                align-items: center;
+                position: relative;
+                border-radius: 1vw;
+                margin-left: 8.6vw;
+    
+                > img:first-child {
+                    width: 31vw;
+                    height: 20vw;
+                }
+    
+                > img:last-child {
+                    position: absolute;
+                    left: -7%;
+                    width: 4.6vw;
+                    height: 4.6vw;
+                    z-index: 1;
+                }
+            }
+        }
+    
+        .features {
+            padding: 4.3vw 11.4vw 8.6vw;
+            background: #fafafa;
+    
+            .slider {
+                display: none;
+            }
+    
+            > h1 {
+                font-family: Lato;
+                font-weight: bold;
+                font-size: 2.5vw;
+                line-height: 3vw;
+                text-align: center;
+                margin-bottom: 4.3vw;
+            }
+    
+            .cards-wrapper {
+                display: flex;
+    
+                .cards {
+                    position: relative;
+                    border-radius: 0.5vw;
+                    width: 24vw;
+                    height: 17.3vw;
+    
+                    .cards-text {
+                        box-sizing: border-box;
+                        padding: 2vw 2vw 1.7vw;
+                        position: absolute;
+                        left: 8%;
+                        top: 60%;
+                        width: 20vw;
+                        height: 13.7vw;
+                        background: #ffffff;
+                        box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+                        border-radius: 0.5vw;
+                        z-index: 1;
+    
+                        > h1 {
+                            font-family: Lato;
+                            font-weight: bold;
+                            font-size: 1.25vw;
+                            line-height: 1.5vw;
+                            text-align: center;
+                            margin-top: 0;
+                        }
+    
+                        > p {
+                            font-family: Lato;
+                            font-size: 1vw;
+                            line-height: 1.5vw;
+                            text-align: center;
+                        }
+    
+                        > a {
+                            display: block;
+                            margin-top: 2vw;
+                            font-family: Lato;
+                            font-size: 1vw;
+                            line-height: 1.5vw;
+                            text-align: center;
+                            text-decoration: none;
+                            color: #ED4C5C;
+                        }
+                    }
+                }
+        
+                .currencies {
+                    background: url('currencies-bg.png') center/cover no-repeat;
+                }
+        
+                .expenses {
+                    background: url('expenses-bg.png') center/cover no-repeat;
+                    margin-left: 2vw;
+                }
+        
+                .software {
+                    background: url('software-bg.png') center/cover no-repeat;
+                    margin-left: 2vw;
+                }    
+            }
+        }
+    
+        .technology {
+            padding: 4.375vw 11.4vw 7.2vw;
+    
+            > h1 {
+                font-family: Lato;
+                font-weight: bold;
+                font-size: 2.5vw;
+                line-height: 3vw;
+                text-align: center;
+                margin-bottom: 3.6vw;
+            }
+    
+            .technology-wrapper {
+                display: flex;
+    
+                .technology-card {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    padding: 0 2vw;
+                    width: 20vw;
+                    height: 11vw;
+    
+                    > p:first-of-type {
+                        font-family: Lato;
+                        font-weight: bold;
+                        font-size: 1.5vw;
+                        line-height: 2vw;
+                        text-align: center;
+                        margin-top: 7vw;
+                    }
+    
+                    > p:last-of-type {
+                        font-family: Lato;
+                        font-size: 1vw;
+                        line-height: 1.5vw;
+                        text-align: center;
+                    }
+                }
+    
+                .first {
+                    background: url('cloud.png') top/40% 60% no-repeat;
+                }
+    
+                .second {
+                    background: url('search.png') top/35% 55% no-repeat;
+                }
+    
+                .third {
+                    background: url('pdf.png') top/35% 55% no-repeat;
+                }
+    
+               .fourth {
+                    background: url('csv.png') 50% 7%/25% 45% no-repeat;
+                }
+    
+                .second, .third, .fourth {
+                    margin-left: 2vw;
+                }
+            }
+        }
+    
+        .redblock {
+            display: flex;
+            align-items: center;
+            background: #ED4C5C;
+            padding: 6.5vw 11.4vw;
+    
+            .left-block {
+                width: 30.9vw;
+    
+                > h1 {
+                    font-family: Lato;
+                    font-size: 2.5vw;
+                    line-height: 3vw;
+                    color: #ffffff;
+                }
+    
+                > p {
+                    font-family: Lato;
+                    font-size: 1.5vw;
+                    line-height: 2vw;
+                    text-align: justify;
+                    color: #ffffff;
+                    margin: 2vw 0;
+                }
+    
+                .markets-wrap {
+                    display: flex;
+                    align-items: center;
+    
+                    img {
+                        width: 1.6vw;
+                        height: 1.6vw;
+                    }
+    
+                    > a:nth-of-type(2), a:nth-of-type(3) {
+                        margin-left: 2vw;
+                    }    
+                }
+            }
+    
+            .right-block {           
+                position: relative;
+                width: 37vw;
+                height: 21.6vw;
+                margin-left: 5.6vw;
+    
+                > img:first-child {
+                    position: absolute;
+                    width: 26.5vw;
+                    height: 18.5vw;
+                    top: 8%;
+                    left: 0;
+                }
+    
+                > img:nth-child(2) {
+                    position: absolute;
+                    width: 30.9vw;
+                    height: 21.6vw;
+                    left: 8%;
+                    top: 0;
+                    z-index: 1;
+                }
+    
+                > img:last-child {
+                    position: absolute;
+                    width: 26.5vw;
+                    height: 18.5vw;
+                    top: 8%;
+                    right: 0;
+                }
+            }
+        }
+    
+        .contact-block {
+            display: flex;
+            padding: 8vw 11.4vw 5.4vw 12vw;
+    
+            .contact-left-textblock {
+                width: 31vw;
+    
+                > h1 {
+                    font-family: Lato;
+                    font-weight: bold;
+                    font-size: 2.5vw;
+                    line-height: 3vw;
+                }
+    
+                > p {
+                    font-family: Lato;
+                    font-size: 1vw;
+                    line-height: 1.4vw;
+                    text-align: justify;
+                    margin-top: 4vw;
+                }
+            }
+    
+            > form {
+                margin-left: 8.6vw;
+                width: 37.5vw;
+    
+                input, > select {
+                    box-sizing: border-box;
+                    height: 4vw;
+                    margin-bottom: 1.6vw;
+                    padding: 1.4vw 2.1vw;
+                    border: 1px solid black;
+                    border-radius: 0.4vw;
+    
+                    font-family: Lato;
+                    font-size: 1.5vw;
+                    line-height: 2vw;
+                    color: rgba(19, 39, 67, 0.5);
+                }
+    
+                .form-name-wrap {
+                    display: flex;
+                    justify-content: space-between;
+    
+                    > input {
+                        width: 17vw;
+                    }
+                }
+    
+                ::placeholder {
+                    font-family: Lato;
+                    font-size: 1.5vw;
+                    line-height: 2vw;
+                    color: rgba(19, 39, 67, 0.5);
+                }
+    
+                > input {
+                    width: 100%;
+                }
+    
+                > select {
+                    width: 100%;
+                    padding: 0 2.1vw;
+                }
+    
+                .form-btn {
+                    font-family: Lato;
+                    font-size: 1vw;
+                    line-height: 1.2vw;
+                    color: #ffffff;
+                    text-transform: uppercase;
+    
+                    > div {
+                        display: inline-block;
+                        background: #ED4C5C;
+                        border: 1px solid #ED4C5C;
+                        border-radius: 0.5vw;
+                        padding: 1.2vw 2.3vw;    
+                    }
+                }
+    
+                .form-btn:hover {
+                    color: #ED4C5C;
+    
+                    > div {
+                        background: #ffffff;
+                    }
+                }
+            }
+        }
+    
+        footer {
+            display: flex;
+            justify-content: space-between;
+            background: #fafafa;
+            padding: 6vw 11vw;
+    
+            .first-column {
+                width: 17.6vw;
+    
+                > p:last-of-type {
+                    margin-top: 9.8vw;
+                }
+            }
+    
+            .third-column {
+    
+                > div {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 50%;
+    
+                    img {
+                        width: 1vw;
+                        height: 1vw;
+                    }
+                }
+            }
+    
+            .fourth-column {
+    
+                > img {
+                    width: 15vw;
+                }
+            }
+    
+            h1 {
+                font-family: Lato;
+                font-weight: bold;
+                font-size: 1.5vw;
+                line-height: 2vw;
+                margin-bottom: 2.3vw;
+            }
+    
+            a, p {
+                font-family: Lato;
+                font-size: 1vw;
+                line-height: 1.5vw;
+                text-decoration: none;
+                color: #000000;
+            }
+        }    
+    }
+}

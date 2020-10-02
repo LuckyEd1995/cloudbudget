@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="desktop.css">
+    <link rel="stylesheet" href="mobile.css">
+    <title>CloudBudget</title>
+</head>
+<body>
+    <!-- mobile.scss menu start-->
+    <div class="mobile-menu">
+        <input id="menu-toggler" type="checkbox">
+        <label class="menu-btn" for="menu-toggler">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <ul class="menu-box">
+            <li>
+                <div class="icon-wrap">
+                    <img src="nav-logo.png" alt="">
+                    <span>cloudbudget</span>
+                </div>            
+            </li>
+            <li><a class="menu-item" href="#">Overview</a></li>
+            <li><a class="menu-item" href="#">Features</a></li>
+            <li><a class="menu-item" href="#">Technology</a></li>
+            <li><a class="menu-item" href="#">Contact</a></li>
+            <li>
+                <input id="dropdown1" type="checkbox">
+                <label class="menu-item" for="dropdown1">Address
+                    <img class="chevron" src="chevron.svg" alt="">
+                </label>
+                <address class="content-wrap post">
+                    Pipang Ltd, Griva Digeni,<br>
+                    81-83 Jacovides Tower, <br>1st Floor
+                    1090 Picosia USA
+                </address>
+            </li>
+            <li>
+                <input id="dropdown2" type="checkbox">
+                <label class="menu-item" for="dropdown2">Services
+                    <img class="chevron" src="chevron.svg" alt="">
+                </label>
+                <div class="content-wrap references">
+                    <a href="#">Overview</a>
+                    <a href="#">Features</a>
+                    <a href="#">Technology</a>
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Privacy</a>    
+                </div>
+            </li>
+            <li>
+                <input id="dropdown3" type="checkbox">
+                <label class="menu-item" for="dropdown3">Get in Touch
+                    <img class="chevron" src="chevron.svg" alt="">
+                </label>
+                <address class="content-wrap contacts">
+                    <a href="#">info@cloudbudget.com</a>
+                    <p>+1 844-721-7120</p>
+                    <a id="first-social" class="social" href="#"><img src="fb.png" alt=""></a>
+                    <a class="social" href="#"><img src="linkedin.png" alt=""></a>
+                    <a class="social" href="#"><img src="twitter.png" alt=""></a>
+                </address>
+            </li>
+            <li>
+                <input id="dropdown4" type="checkbox">
+                <label class="menu-item" for="dropdown4">We Support
+                    <img class="chevron" src="chevron.svg" alt="">
+                </label>
+                <div class="content-wrap secure">
+                    <img src="secure.png" alt="">
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!-- mobile.scss menu end -->
+    <header>
+        <div class="header-top">
+            <div class="header-icon-wrap">
+                <img src="nav-logo.png" alt="">
+                <span>cloudbudget</span>
+            </div>
+            <div class="nav-wrap">
+                <a id="first-nav-item" href="#">overview</a>
+                <a href="#">features</a>
+                <a href="#">technology</a>
+                <a href="#">contact</a>
+            </div>
+            <div class="lang-wrap">
+                <img src="eng.png" alt="">
+                <form action="">
+                    <select name="" id="lang" disabled>
+                        <option value="en">en</option>
+                    </select>
+                </form>
+                <a class="login-button-desktop" href="#"><div>login</div></a>
+            </div>
+        </div>
+        <h1>cloudbudget</h1>
+        <p>Cloud budget management for everyone. 
+            Only €69.95 a Month After a 7 Day Trial of Up to €4.99</p>
+        <div class="flex-wrapper">
+            <a class="login-button-mobile" href="#">
+                <div>login</div>
+            </a>
+            <a class="signup-button" href="#">
+                <div>sign up</div>
+            </a>      
+        </div>
+    </header>
+    <main>
+        <div class="main-text-wrapper">
+            <h1>Easy to Use Cloud Budget Management Software</h1>
+            <p>Our software is made so you can access and manage your budget and expenses online at any time from any device. 
+                It provides detailed income and expense reports with graphs
+                 so you can easilly see your spending patterns and budget at a glance. Read below to find out more.</p>
+            <a href="#">Learn More</a>
+        </div>
+        <div class="main-img-wrapper">
+            <img src="video_bg.png" alt="">
+            <img src="Play Button.png" alt="">
+        </div>
+    </main>
+    <article class="features">
+        <h1>Features</h1>
+        <div id="for-desktop" class="cards-wrapper">
+            <div class="cards currencies">
+                <div class="cards-text">
+                    <h1>Supports All Currencies and Cards</h1>
+                    <p>We support all popular currencies and is fully customizable to add</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="cards expenses">
+                <div class="cards-text">
+                    <h1>Manage your expenses on the go</h1>
+                    <p>You can access your account from anywhere in the world on any device</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="cards software">
+                <div class="cards-text">
+                    <h1>Cloud Budget Management Software</h1>
+                    <p>Our software is made so you can access and manage your budget</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>    
+        </div>
+        <!-- mobile carousel start -->
+        <div class="slider">
+            <div class="cards-wrapper-mobile">
+                <div class="cards currencies">
+                    <div class="cards-text">
+                        <h1>Supports All Currencies and Cards</h1>
+                        <p>We support all popular currencies and is fully customizable to add</p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+                <div class="cards expenses">
+                    <div class="cards-text">
+                        <h1>Manage your expenses on the go</h1>
+                        <p>You can access your account from anywhere in the world on any device</p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+                <div class="cards software">
+                    <div class="cards-text">
+                        <h1>Cloud Budget Management Software</h1>
+                        <p>Our software is made so you can access and manage your budget</p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>    
+            </div>
+            <a class="control-button control-left" href="#" role="button"></a>
+            <a class="control-button control-right" href="#" role="button"></a>  
+        </div>
+        <!-- mobile carousel end -->
+    </article>
+    <article class="technology">
+        <h1>Technology</h1>
+        <div class="technology-wrapper">
+            <div class="technology-card first">
+                <p>Cloud Storage</p>
+                <p>Access your account from anywhere in the world on any device</p>
+            </div>
+            <div class="technology-card second">
+                <p>Secure</p>
+                <p>All your information is stored on secure cloud servers</p>
+            </div>
+            <div class="technology-card third">
+                <p>PDF Download</p>
+                <p>Download any of your reports in PDF format</p>
+            </div>
+            <div class="technology-card fourth">
+                <p>CSV Download</p>
+                <p>All your information is stored on secure cloud servers</p>
+            </div>
+        </div>
+    </article>
+    <article class="redblock">
+        <div class="left-block">
+            <h1>Stay focused on saving money</h1>
+            <p>It is important to stay focused on saving money in any way you can. 
+                We help you monitor your spending habits so you can easily spot and cut any unnecessary expenses. 
+                Simply join today to get started!</p>
+            <div class="markets-wrap">
+                <a href="#"><img src="gplay.png" alt=""></a>
+                <a href="#"><img src="ms.png" alt=""></a>
+                <a href="#"><img src="a.png" alt=""></a>    
+            </div>
+        </div>
+        <div class="right-block">
+            <img src="bg-left.png" alt="">
+            <img src="bg-middle.png" alt="">
+            <img src="bg-right.png" alt="">
+        </div>
+    </article>
+    <article class="contact-block">
+        <div class="contact-left-textblock">
+            <h1>Contact</h1>
+            <p>Questions or concerns? Just fill out the form below and our support team will get back to you within 24 hours</p>
+        </div>
+        <form>
+            <div class="form-name-wrap">
+                <input class="xyz" type="text" placeholder="First Name">
+                <input type="text" placeholder="Last Name">
+            </div>
+            <input type="tel" class="form-control" placeholder="Phone Number">
+            <select name="" id="" disabled>
+                <option>Select Service</option>
+                <option>...</option>
+            </select>
+            <a class="form-btn" href="#">
+                <div>submit now</div>
+            </a>   
+        </form>
+    </article>
+    <footer>
+        <div class="first-column">
+            <h1>Address</h1>
+            <p>Pipang Ltd, Griva Digeni, 81-83 Jacovides Tower, 1st Floor 1090 Picosia USA</p>
+            <p>Copyright 2018 CloudBudget</p>
+        </div>
+        <div class="second-column">
+            <h1>Services</h1>
+            <p><a href="#">Overview</a></p>
+            <p><a href="#">Features</a></p>
+            <p><a href="#">Technology</a></p>
+            <p><a href="#">Terms & Conditions</a></p>
+            <p><a href="#">Privacy</a></p>
+        </div>
+        <div class="third-column">
+            <h1>Get in Touch</h1>
+            <p><a href="#">info@cloudbudget.com</a></p>
+            <p>+1 844-721-7120</p>
+            <div>
+                <a href="#"><img src="fb.png" alt=""></a>
+                <a href="#"><img src="linkedin.png" alt=""></a>
+                <a href="#"><img src="twitter.png" alt=""></a>
+            </div>
+        </div>
+        <div class="fourth-column">
+            <h1>We Support</h1>
+            <img src="secure.png" alt="">
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
